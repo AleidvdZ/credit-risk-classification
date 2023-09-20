@@ -37,7 +37,9 @@ Breaking down the classification report for healthy loans (value of 0) in terms 
 
 On the flip side when looking at loans that are at high risk for defaulting (value of 1), the precision is 85%. This means that 85% of loans that are truly risky were identified as such but this means that 15% of the loans identified as risky are actually potentially healthy loans (false positives). In terms of recall the model determined that 91% of the loans were correctly predicted as risky but this means that it missed identifying 9% of the loans that should have been identified as risky (false negatives).
 
-The model favors the correct identification of healthy loans and does a good job of predicting loans in that category. It might incorrectly identify a loan as unhealty (risky) even when it might not be. This model would safeguard the lender by having high accuracy on the identification of healthy loans and not incorrectly accepting a risky loan. It could lose potential customers by identifying loans as risky.
+The model favors the correct identification of healthy loans and does a good job of predicting loans in that category. It might incorrectly identify a loan as unhealty (risky) even when it might not be. This model would safeguard the lender by having high accuracy on the identification of healthy loans and not incorrectly accepting a risky loan. It could lose potential customers by identifying loans as risky.   
+
+**Based on the balanced accuracy score of 99% and the fact that the model protects the lender with a high precision and recall for the healthy loans, this model should be recommend for use to the lender.**
 
 ## Code Source  
 Starting code was provided in the assignment  
